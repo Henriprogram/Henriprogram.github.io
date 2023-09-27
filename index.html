@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Antenas</title>
+    <style>
+        body {
+            background-color: #4b7acd;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            margin-top: 50px;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .profile {
+            text-align: center;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .work-container {
+            opacity: 0;
+            display: none;
+        }
+        .contact-container {
+            opacity: 0;
+            display: none;
+        }
+        .social-container {
+            opacity: 0;
+            display: none;
+        }
+        .icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .icons a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .icons a:hover,
+        .icons a:focus {
+            background-color: #305ab5; /* Cor de fundo quando hover/foco */
+            color: #fff; /* Cor do texto quando hover/foco */
+        }
+        .contact-form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="profileContainer">
+        <div class="profile">
+            <img src="images/ante1.png" style="width: 350px; height: 200px;">
+            <h1>Seu Nome</h1>
+            <h2>Seu Pai é o fundador da Well Antenas e tem anos de experiência na indústria de antenas. Ele é dedicado a fornecer os melhores serviços aos nossos clientes</h2>
+        </div>
+    </div>
+    <div class="container work-container" id="workContainer">
+        <h1>Trabalho</h1>
+        <h2>Informações sobre o trabalho</h2>
+        <div class="work-photos">
+            <img src="images/img1.jpeg" alt="1" style="width: 200px; height: 200px;">
+            <img src="images/img2.jpeg" alt="2" style="width: 200px; height: 200px;">
+            <img src="images/img3.jpeg" alt="3" style="width: 200px; height: 200px;">
+            <img src="images/img4.jpeg" alt="4" style="width: 200px; height: 200px;">
+            <img src="images/img5.jpeg" alt="5" style="width: 200px; height: 200px;">
+            <img src="images/img6.jpeg" alt="6" style="width: 200px; height: 200px;">
+        </div>
+    </div>
+    <div class="container contact-container" id="contactContainer">
+        <h1>Contato</h1>
+        <div class="contact-form">
+            <form id="contactForm" action="processar_formulario.php" method="post">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="mensagem" placeholder="Digite sua mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+        <div id="mensagemEnviada" style="display: none;">Mensagem enviada com sucesso!</div>
+    </div>
+    <div class="container social-container" id="socialContainer">
+        <h1>Redes Sociais</h1>
+        <div class="social-profile">
+            <img src="images/pai.jpg" style="width: 150px; height: 150px; border-radius: 50%;">
+            <div class="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=61 98311466" target="_blank">
+                    <img src="images/zap.png" style="width: 30px; height: 30px;">
+                </a>
+                <p>61 98311466</p>
+            </div>
+        </div>
+    </div>
+    <div class="icons">
+        <a href="#" onclick="showProfile()">Home</a>
+        <a href="#" onclick="showWork()">Trabalho</a>
+        <a href="#" onclick="showContact()">Contato</a>
+        <a href="#" onclick="showSocial()">Redes Sociais</a>
+    </div>
+
+    <script>
+        function showProfile() {
+            hideAllContainers();
+            document.getElementById('profileContainer').style.opacity = 1;
+            setTimeout(function() {
+                document.getElementById('profileContainer').style.display = 'block';
+            }, 500);
+        }
+
+        function showWork() {
+            hideAllContainers();
+            document.getElementById('workContainer').style.opacity = 1;
+            setTimeout(function() {
+                document.getElementById('workContainer').style.display = 'block';
+            }, 500);
+        }
+
+        function showContact() {
+            hideAllContainers();
+            document.getElementById('contactContainer').style.opacity = 1;
+            setTimeout(function() {
+                document.getElementById('contactContainer').style.display = 'block';
+            }, 500);
+        }
+
+        function showSocial() {
+            hideAllContainers();
+            document.getElementById('socialContainer').style.opacity = 1;
+            setTimeout(function() {
+                document.getElementById('socialContainer').style.display = 'block';
+            }, 500);
+        }
+
+        function hideAllContainers() {
+            var containers = document.querySelectorAll('.container');
+            containers.forEach(function(container) {
+                container.style.opacity = 0;
+                setTimeout(function() {
+                    container.style.display = 'none';
+                }, 500);
+            });
+        }
+    </script>
+</body>
+</html>
