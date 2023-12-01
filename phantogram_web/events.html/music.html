@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Músicas - Phantogram</title>
+  <link rel="stylesheet" href="/phantogram_web/styles/style.css"> <!-- Link para o arquivo CSS principal -->
+  <script src="/phantogram_web/js/scrpts.js" defer></script> <!-- Link para o arquivo JavaScript -->
+ 
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/phantogram_web/images/logoM.png" alt="Logo da Banda Phantogram" width="100" height="100">    </div>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="/phantogram_web/index.html">Home</a></li>
+            <li><a href="/phantogram_web/events.html/about.html">Sobre</a></li>
+            <li><a href="/phantogram_web/events.html/music.html">Músicas</a></li>
+            <li><a href="/phantogram_web/events.html/tour.html">Tour</a></li>
+            <li><a href="/phantogram_web/events.html/gallery.html">Galeria</a></li>
+            <li><a href="/phantogram_web/events.html/contact.html">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <!-- Adicione o elemento de áudio -->
+  <audio id="audioPlayer" controls style="display: none;"></audio>
+
+  <main>
+    <section class="music-page">
+        <h1>Álbuns / Eps and Singles</h1>
+        <div class="album-list">
+          <!-- Lista de álbuns -->
+          <div class="album-item" onclick="showSongs(this)">
+            <img src="/phantogram_web/images/albums_img/eyelogo.png" alt="Album 1">
+            <div class="album-details">
+              <h3>2010 - Eyelid Movies</h3>
+              <p>Descrição do álbum 1...</p>
+            </div>
+            <div class="songs" style="display: none;">
+                <p>01. Mouthful of Diamonds</p>
+                <p>02. When I_m Small</p>
+                <p>03. Turn It Off</p>
+              <p>04. Running from the Cops</p>
+              <p>05. All Dried Up</p>
+                <p>06. As Far As I Can See</p>
+                <p>07. You Are the Ocean</p>
+              <p>08. Bloody Palms</p>
+              <p>09. Futuristic Casket</p>
+                <p>10. Let Me Go</p>
+              <p>11. 10,000 Claps</p>
+              <!-- Adicione mais músicas conforme necessário -->
+            </div>
+          </div>
+          <div class="album-item" onclick="showSongs(this)">
+            <img src="/phantogram_web/images/albums_img/voic.png" alt="Album 2">
+            <div class="album-details">
+              <h3>2014 - Voices</h3>
+              <p>Descrição do álbum 2..</p>
+            </div>
+            <div class="songs" style="display: none;">
+              <p>01. Nothing But Trouble</p>
+              <p>02. Black Out Days</p>
+              <p>03. Fall In Love</p>
+              <p>04. Never Going Home</p>
+              <p>05. The Day You Died</p>
+              <p>06. Howling At the Moon</p>
+              <p>07. Bad Dreams</p>
+              <p>08. Bill Murray</p>
+              <p>09. I Don’t Blame You</p>
+              <p>10. Celebrating Nothing</p>
+              <p>11. My Only Friend</p>
+            </div>
+          </div>
+          <div class="album-item" onclick="showSongs(this)">
+            <img src="/phantogram_web/images/albums_img/three.png" alt="Album 3">
+            <div class="album-details">
+              <h3>2016 - Three</h3>
+              <p>Descrição do álbum 3...</p>
+            </div>
+            <div class="songs" style="display: none;">
+              <p>01. Funeral Pyre</p>
+              <p>02. Same Old Blues</p>
+              <p>03. You Don t Get Me High Anymore</p>
+              <p>04. Cruel World</p>
+              <p>05. Barking Dog</p>
+              <p>06. You re Mine</p>
+              <p>07. Answer</p>
+              <p>08. Run Run Blood</p>
+              <p>09. Destroyer</p>
+              <p>10. Calling All</p>
+            </div>
+          </div>
+          <div class="album-item" onclick="showSongs(this)">
+            <img src="/phantogram_web/images/albums_img/cere.png" alt="Album 4">
+            <div class="album-details">
+              <h3>2020 - Ceremony</h3>
+              <p>Descrição do álbum 4...</p>
+            </div>
+            <div class="songs" style="display: none;">
+              <p>01. Dear God</p>
+              <p>02. In a Spiral</p>
+              <p>03. Into Happiness</p>
+              <p>04. Pedestal</p>
+              <p>05. Love Me Now</p>
+              <p>06. Let Me Down</p>
+              <p>07. News Today</p>
+              <p>08. Mister Impossible</p>
+              <p>09. Glowing</p>
+              <p>10. Gaunt Kids</p>
+              <p>11. Ceremony</p>
+            </div>
+            <!-- <div class="album-item" onclick="showSongs(this)">
+                <img src="/phantogram_web/images/albums_img/nightlogo.png" alt="Album 5">
+                <div class="album-details">
+                  <h3>2011 - Nightlife - EP</h3>
+                  <p>Descrição do álbum 5...</p>
+                </div>
+                <div class="songs" style="display: none;">
+                    <p>01. 16 Years</p>
+                    <p>02. Don_t Move</p>
+                    <p>03. Turning Into Stone</p>
+                    <p>04. Make a Fist</p>
+                    <p>05. Love Me Now</p>
+                    <p>05. Nightlife</p>
+                    <p>06. A Dark Tunnel</p>
+                   
+                </div> -->
+              </div>
+            </div>
+          </section>
+        </main>
+      
+      <audio id="audioPlayer" controls style="display: none;"></audio>
+      
+  </main>
+  <div class="image-container">
+    <!-- Imagem grande ao lado do conteúdo -->
+    <img src="/phantogram_web/images/2015img.jpg" alt="Imagem Grande">
+  </div>
+  <footer class="footer">
+    <div class="contact-info">
+      <h3>Contato</h3>
+      <p>E-mail: contato@phantogram.com</p>
+      <p>Telefone: (XX) XXXX-XXXX</p>
+    </div>
+  
+    <div class="social-links">
+      <h3>Redes Sociais</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/phantogram" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 15V9l5 3-5 3z"/></svg></a></li>
+        <li><a href="https://twitter.com/phantogram" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22.46 2.05a9 9 0 01-2.54.695 4.5 4.5 0 001.965-2.485 9.013 9.013 0 01-2.845 1.09 4.498 4.498 0 00-7.677 4.104A12.773 12.773 0 011.52 2.527a4.5 4.5 0 001.398 6.005 4.472 4.472 0 01-2.04-.564v.057a4.5 4.5 0 003.616 4.425 4.482 4.482 0 01-2.034.077 4.5 4.5 0 004.2 3.125 9.048 9.048 0 01-5.585 1.925 12.798 12.798 0 006.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.196-.005-.392-.015-.586a9.172 9.172 0 002.252-2.342z"/></svg></a></li>
+        <li><a href="https://www.instagram.com/phantogram/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10.5a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/></svg></a></li>
+        <!-- Adicione outros ícones ou links para redes sociais aqui -->
+      </ul>
+    </div>
+  
+    <div class="newsletter">
+      <h3>Assine nosso Boletim</h3>
+      <form action="#" method="post">
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <button type="submit">Assinar</button>
+      </form>
+    </div>
+  
+    <div class="additional-links">
+      <h3>Links Úteis</h3>
+      <ul>
+        <li><a href="https://www.phantogram.com/music" target="_blank">Músicas</a></li>
+        <li><a href="https://www.phantogram.com/store" target="_blank">Loja</a></li>
+        <!-- Adicione outros links úteis aqui -->
+      </ul>
+    </div>
+    
+  </footer>
+</body>
+
+</html>
+
